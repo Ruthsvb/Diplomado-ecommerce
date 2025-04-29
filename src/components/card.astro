@@ -1,0 +1,41 @@
+---
+const { title, description, image, price } = Astro.props;
+---
+
+<article style="
+ border: 1px solid rgba(79, 70, 229, 0.5); /* violeta con 50% opacidad */
+  padding: 1rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9ff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+">
+
+
+<div style="
+overflow: hidden;
+border-radius: 8px;
+">
+<img
+  src={image}
+  alt={title}
+  style="
+    width: 100%;
+    transition: transform 0.3s ease;
+  "
+  onmouseover="this.style.transform='scale(1.1)'"
+  onmouseout="this.style.transform='scale(1)'"
+/>
+</div>
+
+  <h2 style="color: #e54e46; font-size: 1.25rem; margin-top: 0.5rem;">
+    {title}
+  </h2>
+  <p style="font-size: 0.9rem; color: #333;">{description}</p>
+  <p style="font-weight: bold; margin-top: 0.5rem;">Precio: ${price}</p>
+</article>
+
