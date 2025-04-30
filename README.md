@@ -18,9 +18,8 @@ Es una tienda online que muestra productos variados obtenidos desde una API púb
 ## ✨ Funcionalidades
 
 - Muestra productos en tarjetas con imagen, nombre, descripción y precio
-- Efecto de zoom al pasar el cursor sobre las imágenes
 - Diseño responsive para distintos tamaños de pantalla
-- Carrito de compras funcional con localStorage (guardar estado entre recargas)
+- Carrito de compras funcional
 - Filtro en tiempo real para buscar productos
 
 ---
